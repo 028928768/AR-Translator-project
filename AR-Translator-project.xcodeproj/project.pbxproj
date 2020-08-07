@@ -16,6 +16,8 @@
 		73BCB41624DDE7DC0014C1A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BCB41424DDE7DC0014C1A1 /* LaunchScreen.storyboard */; };
 		73BCB42124DDE7DC0014C1A1 /* AR_Translator_projectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB42024DDE7DC0014C1A1 /* AR_Translator_projectTests.swift */; };
 		73BCB42C24DDE7DC0014C1A1 /* AR_Translator_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB42B24DDE7DC0014C1A1 /* AR_Translator_projectUITests.swift */; };
+		73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB43924DDEA350014C1A1 /* HomeViewController.swift */; };
+		73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		73BCB42724DDE7DC0014C1A1 /* AR-Translator-projectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-Translator-projectUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BCB42B24DDE7DC0014C1A1 /* AR_Translator_projectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_Translator_projectUITests.swift; sourceTree = "<group>"; };
 		73BCB42D24DDE7DC0014C1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73BCB43924DDEA350014C1A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */,
 				73BCB40A24DDE7DA0014C1A1 /* ViewController.swift */,
 				73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */,
+				73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */,
+				73BCB43924DDEA350014C1A1 /* HomeViewController.swift */,
 				73BCB41224DDE7DC0014C1A1 /* Assets.xcassets */,
 				73BCB41424DDE7DC0014C1A1 /* LaunchScreen.storyboard */,
 				73BCB41724DDE7DC0014C1A1 /* Info.plist */,
@@ -262,9 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */,
 				73BCB41124DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld in Sources */,
 				73BCB40B24DDE7DA0014C1A1 /* ViewController.swift in Sources */,
 				73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */,
+				73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */,
 				73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
