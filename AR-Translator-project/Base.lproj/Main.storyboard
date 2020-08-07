@@ -26,7 +26,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="HyJ-HO-7FD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Image" id="F69-iY-CTL"/>
+                    <tabBarItem key="tabBarItem" title="Image" image="picture_IMG" id="F69-iY-CTL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeT-BS-ukM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,7 +51,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="A2L-2H-WWh"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="GgL-tN-6ZT"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home_IMG" id="GgL-tN-6ZT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slM-dg-OuF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -97,7 +97,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="yfR-uC-Mb4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Setting" id="dgl-1J-vkW"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="setting_IMG" id="dgl-1J-vkW"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bm-CV-l4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -122,13 +122,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jAr-QO-alO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Dictionary" id="Gke-pj-Int"/>
+                    <tabBarItem key="tabBarItem" title="Dictionary" image="Dictionary_IMG" id="Gke-pj-Int"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaY-XO-QNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-500.00000000000006" y="1240.7608695652175"/>
         </scene>
-        <!--Camera-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AR_Translator_project" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,11 +147,18 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Camera" id="7EL-BA-N7P"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera_IMG" id="7EL-BA-N7P"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="736"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dictionary_IMG" width="50" height="50"/>
+        <image name="camera_IMG" width="50" height="50"/>
+        <image name="home_IMG" width="50" height="50"/>
+        <image name="picture_IMG" width="50" height="50"/>
+        <image name="setting_IMG" width="50" height="50"/>
+    </resources>
 </document>

@@ -12,8 +12,12 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        //set Background image
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "yellowBackgroundIMG")!)
+        //set Bar button item appearance
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: .normal)
+        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.orange], for: .selected)
     }
     
 
