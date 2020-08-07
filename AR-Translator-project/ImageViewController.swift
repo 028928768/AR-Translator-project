@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 
 class ImageViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
@@ -21,7 +22,8 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
     var targetCode = "ja"
     
     //MARK: Texts recognition
-    
+    lazy var vision = Vision.vision()
+    var textDetector: VisionTextDetector?
     
     //MARK: Delegates
         func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -38,7 +40,7 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
            
            
               //Translating process
-              //detectText(image: selectedImage)
+              detectText(image: selectedImage)
                      
                      
           }
@@ -87,3 +89,47 @@ class ImageViewController: UIViewController, UINavigationControllerDelegate, UII
     */
 
 }
+  //MARK: Detect and Translation Methods
+extension ImageViewController {
+    func detectText (image: UIImage) {
+        
+        textDetector = vision.textDetector()
+        
+        let visionImage = VisionImage(image: image)
+        
+        textDetector?.detect(in: visionImage) { (features, error) in
+            guard error == nil, let features = features, !features.isEmpty else {
+                return
+            }
+            
+            debugPrint("Feature blocks in the image: \(features.count)")
+            
+            var detectedText = ""
+            for feature in features {
+                let value = feature.text
+                detectedText.append("\(value) ")
+            }
+
+            self.detectTextLabel.text = detectedText
+            self.translateText(detectedText: detectedText)
+        }
+    } // end detectText function
+    
+    func translateText(detectedText: String) {
+        
+        guard !detectedText.isEmpty else {
+            return
+        }
+        
+        let task = try? GoogleTranslate.sharedInstance.translateTextTask(text: detectedText, targetLanguage: self.targetCode, completionHandler: { (translatedText: String?, error: Error?) in
+            debugPrint(error?.localizedDescription)
+            
+            DispatchQueue.main.async {
+                self.translateTextLabel.text = translatedText
+            }
+            
+        })
+        task?.resume()
+    }
+    
+}// end extension

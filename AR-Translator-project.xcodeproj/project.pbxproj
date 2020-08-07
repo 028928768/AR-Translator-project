@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		054BE71241E924915F9D5E08 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42472DA735431046742604C0 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a */; };
+		7362191A24DDF8E600F29160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7362191924DDF8E600F29160 /* GoogleService-Info.plist */; };
+		7362191C24DDFA9100F29160 /* GoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362191B24DDFA9100F29160 /* GoogleTranslate.swift */; };
 		73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */; };
 		73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */; };
 		73BCB40E24DDE7DA0014C1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */; };
@@ -17,6 +20,8 @@
 		73BCB42C24DDE7DC0014C1A1 /* AR_Translator_projectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB42B24DDE7DC0014C1A1 /* AR_Translator_projectUITests.swift */; };
 		73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB43924DDEA350014C1A1 /* HomeViewController.swift */; };
 		73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */; };
+		7A13C3A42734B5FFFE686847 /* libPods-AR-Translator-project.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EEC7F3EAAEA78DC6AE73593 /* libPods-AR-Translator-project.a */; };
+		F54129DC0DA872224BB29453 /* libPods-AR-Translator-projectTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAFDC890606E35F144099114 /* libPods-AR-Translator-projectTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2276903244CDADCD0691C808 /* Pods-AR-Translator-projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-projectTests.debug.xcconfig"; path = "Target Support Files/Pods-AR-Translator-projectTests/Pods-AR-Translator-projectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		42472DA735431046742604C0 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AR-Translator-project-AR-Translator-projectUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FE57B1AAFF4B9BF9728551C /* Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EEC7F3EAAEA78DC6AE73593 /* libPods-AR-Translator-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AR-Translator-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63D82AA2C8B764C160B7703B /* Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7362191924DDF8E600F29160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7362191B24DDFA9100F29160 /* GoogleTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslate.swift; sourceTree = "<group>"; };
 		73BCB40324DDE7DA0014C1A1 /* AR-Translator-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Translator-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +65,10 @@
 		73BCB42D24DDE7DC0014C1A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73BCB43924DDEA350014C1A1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		839663C120FF211A5F6F9897 /* Pods-AR-Translator-project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project.debug.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project/Pods-AR-Translator-project.debug.xcconfig"; sourceTree = "<group>"; };
+		9C560C776C13133DE2FC74F7 /* Pods-AR-Translator-project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project.release.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project/Pods-AR-Translator-project.release.xcconfig"; sourceTree = "<group>"; };
+		CAFDC890606E35F144099114 /* libPods-AR-Translator-projectTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AR-Translator-projectTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB850E05D7A0CE7197B74633 /* Pods-AR-Translator-projectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-projectTests.release.xcconfig"; path = "Target Support Files/Pods-AR-Translator-projectTests/Pods-AR-Translator-projectTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A13C3A42734B5FFFE686847 /* libPods-AR-Translator-project.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54129DC0DA872224BB29453 /* libPods-AR-Translator-projectTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054BE71241E924915F9D5E08 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +106,8 @@
 				73BCB41F24DDE7DC0014C1A1 /* AR-Translator-projectTests */,
 				73BCB42A24DDE7DC0014C1A1 /* AR-Translator-projectUITests */,
 				73BCB40424DDE7DA0014C1A1 /* Products */,
+				E74930DDD2B9835EAF48F32E /* Pods */,
+				F676F41B998499F9DA15D43D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,8 +128,10 @@
 				73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */,
 				73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */,
 				73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */,
+				7362191B24DDFA9100F29160 /* GoogleTranslate.swift */,
 				73BCB43924DDEA350014C1A1 /* HomeViewController.swift */,
 				73BCB41224DDE7DC0014C1A1 /* Assets.xcassets */,
+				7362191924DDF8E600F29160 /* GoogleService-Info.plist */,
 				73BCB41424DDE7DC0014C1A1 /* LaunchScreen.storyboard */,
 				73BCB41724DDE7DC0014C1A1 /* Info.plist */,
 				73BCB40F24DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld */,
@@ -134,6 +157,29 @@
 			path = "AR-Translator-projectUITests";
 			sourceTree = "<group>";
 		};
+		E74930DDD2B9835EAF48F32E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				839663C120FF211A5F6F9897 /* Pods-AR-Translator-project.debug.xcconfig */,
+				9C560C776C13133DE2FC74F7 /* Pods-AR-Translator-project.release.xcconfig */,
+				4FE57B1AAFF4B9BF9728551C /* Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig */,
+				63D82AA2C8B764C160B7703B /* Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig */,
+				2276903244CDADCD0691C808 /* Pods-AR-Translator-projectTests.debug.xcconfig */,
+				CB850E05D7A0CE7197B74633 /* Pods-AR-Translator-projectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F676F41B998499F9DA15D43D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5EEC7F3EAAEA78DC6AE73593 /* libPods-AR-Translator-project.a */,
+				42472DA735431046742604C0 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a */,
+				CAFDC890606E35F144099114 /* libPods-AR-Translator-projectTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73BCB43024DDE7DC0014C1A1 /* Build configuration list for PBXNativeTarget "AR-Translator-project" */;
 			buildPhases = (
+				6D09A9A1F14C58F01ECDF90C /* [CP] Check Pods Manifest.lock */,
 				73BCB3FF24DDE7DA0014C1A1 /* Sources */,
 				73BCB40024DDE7DA0014C1A1 /* Frameworks */,
 				73BCB40124DDE7DA0014C1A1 /* Resources */,
+				C389239893DA46257B3955F2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -158,6 +206,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73BCB43324DDE7DC0014C1A1 /* Build configuration list for PBXNativeTarget "AR-Translator-projectTests" */;
 			buildPhases = (
+				6C68561E7165732C27A7ED47 /* [CP] Check Pods Manifest.lock */,
 				73BCB41824DDE7DC0014C1A1 /* Sources */,
 				73BCB41924DDE7DC0014C1A1 /* Frameworks */,
 				73BCB41A24DDE7DC0014C1A1 /* Resources */,
@@ -176,9 +225,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73BCB43624DDE7DC0014C1A1 /* Build configuration list for PBXNativeTarget "AR-Translator-projectUITests" */;
 			buildPhases = (
+				2030C240FEC1022625C65A74 /* [CP] Check Pods Manifest.lock */,
 				73BCB42324DDE7DC0014C1A1 /* Sources */,
 				73BCB42424DDE7DC0014C1A1 /* Frameworks */,
 				73BCB42524DDE7DC0014C1A1 /* Resources */,
+				3EAED4DF877AB57078EFC249 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -240,6 +291,7 @@
 			files = (
 				73BCB41624DDE7DC0014C1A1 /* LaunchScreen.storyboard in Resources */,
 				73BCB41324DDE7DC0014C1A1 /* Assets.xcassets in Resources */,
+				7362191A24DDF8E600F29160 /* GoogleService-Info.plist in Resources */,
 				73BCB40E24DDE7DA0014C1A1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +312,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2030C240FEC1022625C65A74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR-Translator-project-AR-Translator-projectUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EAED4DF877AB57078EFC249 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C68561E7165732C27A7ED47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR-Translator-projectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D09A9A1F14C58F01ECDF90C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AR-Translator-project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C389239893DA46257B3955F2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project/Pods-AR-Translator-project-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project/Pods-AR-Translator-project-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AR-Translator-project/Pods-AR-Translator-project-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73BCB3FF24DDE7DA0014C1A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +423,7 @@
 				73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */,
 				73BCB41124DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld in Sources */,
 				73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */,
+				7362191C24DDFA9100F29160 /* GoogleTranslate.swift in Sources */,
 				73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */,
 				73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */,
 			);
@@ -440,6 +596,7 @@
 		};
 		73BCB43124DDE7DC0014C1A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 839663C120FF211A5F6F9897 /* Pods-AR-Translator-project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +615,7 @@
 		};
 		73BCB43224DDE7DC0014C1A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C560C776C13133DE2FC74F7 /* Pods-AR-Translator-project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,6 +634,7 @@
 		};
 		73BCB43424DDE7DC0014C1A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2276903244CDADCD0691C808 /* Pods-AR-Translator-projectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +657,7 @@
 		};
 		73BCB43524DDE7DC0014C1A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB850E05D7A0CE7197B74633 /* Pods-AR-Translator-projectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -520,6 +680,7 @@
 		};
 		73BCB43724DDE7DC0014C1A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FE57B1AAFF4B9BF9728551C /* Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -540,6 +701,7 @@
 		};
 		73BCB43824DDE7DC0014C1A1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63D82AA2C8B764C160B7703B /* Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
