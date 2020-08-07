@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */; };
 		73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */; };
-		73BCB40B24DDE7DA0014C1A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40A24DDE7DA0014C1A1 /* ViewController.swift */; };
 		73BCB40E24DDE7DA0014C1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */; };
 		73BCB41124DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40F24DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld */; };
 		73BCB41324DDE7DC0014C1A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BCB41224DDE7DC0014C1A1 /* Assets.xcassets */; };
@@ -41,7 +40,6 @@
 		73BCB40324DDE7DA0014C1A1 /* AR-Translator-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Translator-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73BCB40A24DDE7DA0014C1A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73BCB40D24DDE7DA0014C1A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73BCB41024DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AR_Translator_project.xcdatamodel; sourceTree = "<group>"; };
 		73BCB41224DDE7DC0014C1A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -107,7 +105,6 @@
 			children = (
 				73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */,
 				73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */,
-				73BCB40A24DDE7DA0014C1A1 /* ViewController.swift */,
 				73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */,
 				73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */,
 				73BCB43924DDEA350014C1A1 /* HomeViewController.swift */,
@@ -270,7 +267,6 @@
 			files = (
 				73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */,
 				73BCB41124DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld in Sources */,
-				73BCB40B24DDE7DA0014C1A1 /* ViewController.swift in Sources */,
 				73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */,
 				73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */,
 				73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */,

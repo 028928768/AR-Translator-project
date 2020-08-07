@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Image-->
+        <!--Image View Controller-->
         <scene sceneID="eVb-vj-86o">
             <objects>
                 <viewController id="cfS-nK-tau" customClass="ImageViewController" customModule="AR_Translator_project" customModuleProvider="target" sceneMemberID="viewController">
@@ -15,22 +15,94 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOq-6m-X37">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="image" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOq-6m-X37">
                                 <rect key="frame" x="186" y="226" width="47" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DefaultIMG" translatesAutoresizingMaskIntoConstraints="NO" id="DVp-y1-AhF">
+                                <rect key="frame" x="2" y="44" width="414" height="310"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detected Texts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-lo-7te">
+                                <rect key="frame" x="20" y="362" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="sh6-Pq-jwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="detected texts will be displayed here......." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UjB-Iw-TSU">
+                                <rect key="frame" x="22" y="391" width="374" height="113"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="fC1-GT-njP"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Translate Texts:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEy-MN-hvM">
+                                <rect key="frame" x="20" y="509" width="121" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fAy-24-n6C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="translated texts will be displayed here......." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="DRC-9i-VuS">
+                                <rect key="frame" x="20" y="538" width="374" height="113"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="113" id="LiE-wC-M36"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DVp-y1-AhF" firstAttribute="top" secondItem="HyJ-HO-7FD" secondAttribute="top" id="6d2-Zx-uG3"/>
+                            <constraint firstItem="rcS-lo-7te" firstAttribute="centerX" secondItem="aEy-MN-hvM" secondAttribute="centerX" id="8wO-hs-PIz"/>
+                            <constraint firstItem="UjB-Iw-TSU" firstAttribute="top" secondItem="rcS-lo-7te" secondAttribute="bottom" constant="8" id="AW7-YF-anp"/>
+                            <constraint firstAttribute="trailing" secondItem="DVp-y1-AhF" secondAttribute="trailing" id="Gsp-gW-ZgN"/>
+                            <constraint firstItem="HOq-6m-X37" firstAttribute="centerX" secondItem="UjB-Iw-TSU" secondAttribute="centerX" id="H3r-5Y-XjG"/>
+                            <constraint firstItem="rcS-lo-7te" firstAttribute="leading" secondItem="DRC-9i-VuS" secondAttribute="leading" id="IbG-6h-LD7"/>
+                            <constraint firstItem="DRC-9i-VuS" firstAttribute="trailing" secondItem="dPf-RW-DZ0" secondAttribute="trailingMargin" id="LRs-LC-CHZ"/>
+                            <constraint firstItem="DVp-y1-AhF" firstAttribute="centerX" secondItem="HOq-6m-X37" secondAttribute="centerX" id="OVX-Nd-MOd"/>
+                            <constraint firstItem="DVp-y1-AhF" firstAttribute="leading" secondItem="HyJ-HO-7FD" secondAttribute="leading" constant="2" id="QUt-RY-n5E"/>
+                            <constraint firstItem="rcS-lo-7te" firstAttribute="trailing" secondItem="aEy-MN-hvM" secondAttribute="trailing" id="Qvn-2V-yZH"/>
+                            <constraint firstItem="HOq-6m-X37" firstAttribute="leading" secondItem="HyJ-HO-7FD" secondAttribute="leading" constant="186" id="RS4-cL-djD"/>
+                            <constraint firstItem="UjB-Iw-TSU" firstAttribute="leading" secondItem="HyJ-HO-7FD" secondAttribute="leading" constant="22" id="Rvv-Af-LMv"/>
+                            <constraint firstItem="rcS-lo-7te" firstAttribute="top" secondItem="DVp-y1-AhF" secondAttribute="bottom" constant="8" id="U1z-CW-yBN"/>
+                            <constraint firstItem="aEy-MN-hvM" firstAttribute="top" secondItem="UjB-Iw-TSU" secondAttribute="bottom" constant="5" id="Vzh-C9-jlC"/>
+                            <constraint firstItem="HOq-6m-X37" firstAttribute="top" secondItem="HyJ-HO-7FD" secondAttribute="top" constant="182" id="bu3-AC-Ofp"/>
+                            <constraint firstItem="HyJ-HO-7FD" firstAttribute="trailing" secondItem="UjB-Iw-TSU" secondAttribute="trailing" constant="18" id="llb-h6-4jq"/>
+                            <constraint firstItem="DRC-9i-VuS" firstAttribute="top" secondItem="aEy-MN-hvM" secondAttribute="bottom" constant="8" id="n1g-im-f3g"/>
+                            <constraint firstItem="HyJ-HO-7FD" firstAttribute="bottom" secondItem="DRC-9i-VuS" secondAttribute="bottom" constant="36" id="ncO-ca-NFb"/>
+                            <constraint firstItem="rcS-lo-7te" firstAttribute="leading" secondItem="dPf-RW-DZ0" secondAttribute="leadingMargin" id="vaQ-cc-A1w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="HyJ-HO-7FD"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Image" image="picture_IMG" id="F69-iY-CTL"/>
+                    <navigationItem key="navigationItem" id="YSq-np-X4O">
+                        <barButtonItem key="leftBarButtonItem" title="Photo" id="8Qy-Bm-W29">
+                            <connections>
+                                <action selector="photoButtonTapped:" destination="cfS-nK-tau" id="YIa-ei-bqJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="detectTextLabel" destination="UjB-Iw-TSU" id="88o-TU-APq"/>
+                        <outlet property="imageView" destination="DVp-y1-AhF" id="JAw-J1-ENx"/>
+                        <outlet property="translateTextLabel" destination="DRC-9i-VuS" id="BXF-36-SmA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EeT-BS-ukM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="302.89855072463769" y="-79.076086956521749"/>
+            <point key="canvasLocation" x="1210.144927536232" y="-79.076086956521749"/>
         </scene>
         <!--Home-->
         <scene sceneID="8B9-cB-lJU">
@@ -64,11 +136,11 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0AQ-Xl-3PN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="kZq-R0-yg7" kind="relationship" relationship="viewControllers" id="A8w-Pa-umd"/>
-                        <segue destination="cfS-nK-tau" kind="relationship" relationship="viewControllers" id="anM-N9-S4b"/>
+                        <segue destination="jqd-fm-A9a" kind="relationship" relationship="viewControllers" id="anM-N9-S4b"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="CyI-X2-CNr"/>
                         <segue destination="4LF-59-kxB" kind="relationship" relationship="viewControllers" id="dqB-Ad-bY2"/>
                         <segue destination="P4M-dr-gcz" kind="relationship" relationship="viewControllers" id="Wkt-In-RyA"/>
@@ -147,14 +219,36 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="camera_IMG" id="7EL-BA-N7P"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera_IMG" id="7EL-BA-N7P">
+                        <inset key="imageInsets" minX="-17" minY="-25" maxX="-20" maxY="-8"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="736"/>
         </scene>
+        <!--Image-->
+        <scene sceneID="5pj-dH-yf9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jqd-fm-A9a" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Image" image="picture_IMG" id="F69-iY-CTL"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Swo-HA-yLH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cfS-nK-tau" kind="relationship" relationship="rootViewController" id="DEK-ct-q2r"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="563-wa-oK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302.89855072463769" y="-79.076086956521749"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="DefaultIMG" width="266.66665649414062" height="200"/>
         <image name="Dictionary_IMG" width="50" height="50"/>
         <image name="camera_IMG" width="50" height="50"/>
         <image name="home_IMG" width="50" height="50"/>
