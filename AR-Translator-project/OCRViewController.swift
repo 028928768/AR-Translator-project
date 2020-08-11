@@ -36,6 +36,12 @@ class OCRViewController: UIViewController {
   @IBOutlet weak var regionOfInterest: UIView!
   @IBOutlet weak var regionOfInterestWidth: NSLayoutConstraint!
   @IBOutlet weak var regionOfInterestHeight: NSLayoutConstraint!
+    
+  //MARK: Translation variables
+     let languages = ["Select Language", "Hindi", "French", "Italian", "German", "Japanese"]
+     let languageCodes = ["hi", "hi", "fr", "it", "de", "ja"]
+     var targetCode = "ja"
+     var tempTranslatedText: String = "nil"
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -106,7 +112,8 @@ class OCRViewController: UIViewController {
       DispatchQueue.main.async {
         // de something with recognised texts
         //self?.recognitionLabel.text = recognizedString
-        self?.recognitionLabel.text = "recognizedString"
+        self?.recognitionLabel.text = recognizedString
+        self?.translateText(detectedText: recognizedString)
       }
       self?.recognitionIsRunning = false
     }
@@ -160,6 +167,7 @@ class OCRViewController: UIViewController {
   
   @objc func recognitionButtonTapped(_ sender: Any) {
     recognitionIsRunning.toggle()
+    
   }
   
   @objc func flashLightButtonTapped(_ sender: Any) {
@@ -176,4 +184,36 @@ class OCRViewController: UIViewController {
     let flashlightButtonTitle = device.torchMode == .off ? "Flashlight On" : "Flashlight Off"
     flashlightButton.title = flashlightButtonTitle
   }
-}
+    
+    //Seque preparation
+       override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ARseque" {
+            if let destination = segue.destination as? ARsceneViewController {
+                destination.arText = self.tempTranslatedText
+        }
+      }
+    }
+    
+}// End main bracket
+//MARK: Detect and Translation Methods
+extension OCRViewController {
+    func translateText(detectedText: String) {
+        
+        guard !detectedText.isEmpty else {
+            return
+        }
+        
+        let task = try? GoogleTranslate.sharedInstance.translateTextTask(text: detectedText, targetLanguage: self.targetCode, completionHandler: { (translatedText: String?, error: Error?) in
+            debugPrint(error?.localizedDescription)
+            
+            DispatchQueue.main.async {
+                self.recognitionTitleLabel.text = translatedText
+                self.tempTranslatedText = translatedText ?? "nil"
+                self.performSegue(withIdentifier: "ARseque", sender: self)
+            }
+            
+        })
+        task?.resume()
+    }
+
+} // /end extension
