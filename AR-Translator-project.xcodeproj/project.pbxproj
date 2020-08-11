@@ -10,6 +10,8 @@
 		054BE71241E924915F9D5E08 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42472DA735431046742604C0 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a */; };
 		7362191A24DDF8E600F29160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7362191924DDF8E600F29160 /* GoogleService-Info.plist */; };
 		7362191C24DDFA9100F29160 /* GoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362191B24DDFA9100F29160 /* GoogleTranslate.swift */; };
+		73A4D7F424DEE645009E0726 /* OCRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A4D7F324DEE644009E0726 /* OCRViewController.swift */; };
+		73A4D7F624DEE6F6009E0726 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 73A4D7F524DEE6F6009E0726 /* tessdata */; };
 		73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */; };
 		73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */; };
 		73BCB40E24DDE7DA0014C1A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */; };
@@ -49,6 +51,8 @@
 		63D82AA2C8B764C160B7703B /* Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7362191924DDF8E600F29160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7362191B24DDFA9100F29160 /* GoogleTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslate.swift; sourceTree = "<group>"; };
+		73A4D7F324DEE644009E0726 /* OCRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCRViewController.swift; sourceTree = "<group>"; };
+		73A4D7F524DEE6F6009E0726 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
 		73BCB40324DDE7DA0014C1A1 /* AR-Translator-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-Translator-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 				73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */,
 				73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */,
 				73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */,
+				73A4D7F524DEE6F6009E0726 /* tessdata */,
+				73A4D7F324DEE644009E0726 /* OCRViewController.swift */,
 				7362191B24DDFA9100F29160 /* GoogleTranslate.swift */,
 				73BCB43924DDEA350014C1A1 /* HomeViewController.swift */,
 				73BCB41224DDE7DC0014C1A1 /* Assets.xcassets */,
@@ -291,6 +297,7 @@
 			files = (
 				73BCB41624DDE7DC0014C1A1 /* LaunchScreen.storyboard in Resources */,
 				73BCB41324DDE7DC0014C1A1 /* Assets.xcassets in Resources */,
+				73A4D7F624DEE6F6009E0726 /* tessdata in Resources */,
 				7362191A24DDF8E600F29160 /* GoogleService-Info.plist in Resources */,
 				73BCB40E24DDE7DA0014C1A1 /* Main.storyboard in Resources */,
 			);
@@ -426,6 +433,7 @@
 				7362191C24DDFA9100F29160 /* GoogleTranslate.swift in Sources */,
 				73BCB43C24DDEA880014C1A1 /* ImageViewController.swift in Sources */,
 				73BCB40924DDE7DA0014C1A1 /* SceneDelegate.swift in Sources */,
+				73A4D7F424DEE645009E0726 /* OCRViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
