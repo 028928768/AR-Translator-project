@@ -273,11 +273,37 @@
                         <outlet property="regionOfInterest" destination="acU-ZX-twv" id="bRH-fp-sWv"/>
                         <outlet property="regionOfInterestHeight" destination="U4l-PK-24O" id="h9r-mt-cCc"/>
                         <outlet property="regionOfInterestWidth" destination="6Ex-7x-HhP" id="H3Z-T7-opB"/>
+                        <segue destination="1cT-HR-rKR" kind="show" identifier="ARseque" id="ygh-9B-auI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8J-t5-ZmI" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1210.144927536232" y="736.95652173913049"/>
+            <point key="canvasLocation" x="1238" y="737"/>
+        </scene>
+        <!--Rscene View Controller-->
+        <scene sceneID="AF1-DL-56h">
+            <objects>
+                <viewController id="1cT-HR-rKR" customClass="ARsceneViewController" customModule="AR_Translator_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ev-gl-fmz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="J30-h3-FW5">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </arscnView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ot7-zy-rEI"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="E2f-h0-cyG"/>
+                    <connections>
+                        <outlet property="sceneView" destination="J30-h3-FW5" id="naZ-vk-Fva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AoD-Gw-eeG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2157.971014492754" y="736.95652173913049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i2u-wx-LGm">
