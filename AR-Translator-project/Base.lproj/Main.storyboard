@@ -142,11 +142,12 @@
                         <segue destination="kZq-R0-yg7" kind="relationship" relationship="viewControllers" id="A8w-Pa-umd"/>
                         <segue destination="jqd-fm-A9a" kind="relationship" relationship="viewControllers" id="anM-N9-S4b"/>
                         <segue destination="eTI-iT-PUl" kind="relationship" relationship="viewControllers" id="EbN-vG-tjk"/>
+                        <segue destination="4LF-59-kxB" kind="relationship" relationship="viewControllers" id="3ru-AL-2vl"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6o-Hh-CdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1235" y="-293"/>
+            <point key="canvasLocation" x="-1374" y="-213"/>
         </scene>
         <!--Setting-->
         <scene sceneID="jVb-mI-CW7">
@@ -171,28 +172,92 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7bm-CV-l4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1457" y="662"/>
+            <point key="canvasLocation" x="-2096" y="737"/>
         </scene>
         <!--Dictionary-->
         <scene sceneID="jT8-QP-svW">
             <objects>
-                <viewController id="4LF-59-kxB" sceneMemberID="viewController">
+                <viewController id="4LF-59-kxB" customClass="DictionaryViewController" customModule="AR_Translator_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vTK-Nr-zTd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY0-xF-P2U">
-                                <rect key="frame" x="186" y="299" width="78" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dictionary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UY0-xF-P2U">
+                                <rect key="frame" x="168" y="30" width="78" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="ynM-YS-wld"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="input text here....." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qi-H4-H17">
+                                <rect key="frame" x="55" y="107" width="304" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Translated text........" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-8N-vKk">
+                                <rect key="frame" x="55" y="266" width="304" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7TV-uG-3UC"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xPh-Gv-Vka">
+                                <rect key="frame" x="168" y="170" width="78" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="Ogr-Ys-wuM"/>
+                                </constraints>
+                                <state key="normal" title="Translate"/>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAZ-l9-Vio">
+                                <rect key="frame" x="47" y="476" width="320" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="uOc-XY-EQz"/>
+                                </constraints>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4z-Bm-hs7">
+                                <rect key="frame" x="0.0" y="424" width="414" height="30"/>
+                                <state key="normal" title="Select Language"/>
+                                <connections>
+                                    <action selector="selectLanguageTapped:" destination="4LF-59-kxB" eventType="touchUpInside" id="8Ae-1Q-AKi"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.60513951270935429" green="0.7693973183631897" blue="0.69321851998084894" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="UY0-xF-P2U" firstAttribute="trailing" secondItem="xPh-Gv-Vka" secondAttribute="trailing" id="7il-yk-Qsc"/>
+                            <constraint firstItem="xPh-Gv-Vka" firstAttribute="top" secondItem="0Qi-H4-H17" secondAttribute="bottom" constant="29" id="99X-wI-vWY"/>
+                            <constraint firstItem="0Qi-H4-H17" firstAttribute="leading" secondItem="jAr-QO-alO" secondAttribute="leading" constant="55" id="DpF-Lq-ae0"/>
+                            <constraint firstItem="ffw-8N-vKk" firstAttribute="top" secondItem="xPh-Gv-Vka" secondAttribute="bottom" constant="19" id="Fpb-mA-U3z"/>
+                            <constraint firstItem="UY0-xF-P2U" firstAttribute="top" secondItem="jAr-QO-alO" secondAttribute="top" constant="30" id="GLk-7S-a8G"/>
+                            <constraint firstItem="Z4z-Bm-hs7" firstAttribute="leading" secondItem="jAr-QO-alO" secondAttribute="leading" id="HOW-Ft-eSb"/>
+                            <constraint firstItem="0Qi-H4-H17" firstAttribute="trailing" secondItem="ffw-8N-vKk" secondAttribute="trailing" id="Ifv-Lo-iZx"/>
+                            <constraint firstItem="UY0-xF-P2U" firstAttribute="leading" secondItem="xPh-Gv-Vka" secondAttribute="leading" id="JIn-Mc-cLg"/>
+                            <constraint firstItem="UY0-xF-P2U" firstAttribute="centerX" secondItem="vTK-Nr-zTd" secondAttribute="centerX" id="OOT-7E-T9j"/>
+                            <constraint firstItem="Z4z-Bm-hs7" firstAttribute="top" secondItem="ffw-8N-vKk" secondAttribute="bottom" constant="30" id="Q1d-jk-3EN"/>
+                            <constraint firstItem="Z4z-Bm-hs7" firstAttribute="centerX" secondItem="sAZ-l9-Vio" secondAttribute="centerX" id="QoJ-lN-36i"/>
+                            <constraint firstItem="jAr-QO-alO" firstAttribute="bottom" secondItem="sAZ-l9-Vio" secondAttribute="bottom" constant="11" id="eJj-A7-rcd"/>
+                            <constraint firstItem="sAZ-l9-Vio" firstAttribute="top" secondItem="Z4z-Bm-hs7" secondAttribute="bottom" constant="22" id="hTP-Gr-Fes"/>
+                            <constraint firstItem="ffw-8N-vKk" firstAttribute="centerX" secondItem="Z4z-Bm-hs7" secondAttribute="centerX" id="nAV-5m-IBI"/>
+                            <constraint firstItem="UY0-xF-P2U" firstAttribute="centerX" secondItem="0Qi-H4-H17" secondAttribute="centerX" id="sdu-Gy-rJt"/>
+                            <constraint firstItem="0Qi-H4-H17" firstAttribute="leading" secondItem="ffw-8N-vKk" secondAttribute="leading" id="vN9-RV-r4X"/>
+                            <constraint firstItem="0Qi-H4-H17" firstAttribute="top" secondItem="UY0-xF-P2U" secondAttribute="bottom" constant="44" id="wLo-bO-xdN"/>
+                            <constraint firstItem="sAZ-l9-Vio" firstAttribute="top" secondItem="Z4z-Bm-hs7" secondAttribute="bottom" constant="22" id="xhr-h2-42b"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jAr-QO-alO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dictionary" image="Dictionary_IMG" id="Gke-pj-Int"/>
+                    <connections>
+                        <outlet property="inputTextLabel" destination="0Qi-H4-H17" id="wFP-cb-mPc"/>
+                        <outlet property="languagePicker" destination="sAZ-l9-Vio" id="IJT-P1-OtS"/>
+                        <outlet property="languagePickerHeighConstraint" destination="uOc-XY-EQz" id="CcF-go-x0G"/>
+                        <outlet property="outputTextLabel" destination="ffw-8N-vKk" id="f8E-qX-vHx"/>
+                        <outlet property="selectLanguageButton" destination="Z4z-Bm-hs7" id="1fk-Yu-oZ0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaY-XO-QNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

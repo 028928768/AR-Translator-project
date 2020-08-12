@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		054BE71241E924915F9D5E08 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42472DA735431046742604C0 /* libPods-AR-Translator-project-AR-Translator-projectUITests.a */; };
+		7329E5F724E3584600E63076 /* DictionaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7329E5F624E3584600E63076 /* DictionaryViewController.swift */; };
 		7362191A24DDF8E600F29160 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7362191924DDF8E600F29160 /* GoogleService-Info.plist */; };
 		7362191C24DDFA9100F29160 /* GoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7362191B24DDFA9100F29160 /* GoogleTranslate.swift */; };
 		7373884A24E339C600CC9AFB /* ARsceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7373884924E339C600CC9AFB /* ARsceneViewController.swift */; };
@@ -50,6 +51,7 @@
 		4FE57B1AAFF4B9BF9728551C /* Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EEC7F3EAAEA78DC6AE73593 /* libPods-AR-Translator-project.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AR-Translator-project.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D82AA2C8B764C160B7703B /* Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; path = "Target Support Files/Pods-AR-Translator-project-AR-Translator-projectUITests/Pods-AR-Translator-project-AR-Translator-projectUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7329E5F624E3584600E63076 /* DictionaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryViewController.swift; sourceTree = "<group>"; };
 		7362191924DDF8E600F29160 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7362191B24DDFA9100F29160 /* GoogleTranslate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleTranslate.swift; sourceTree = "<group>"; };
 		7373884924E339C600CC9AFB /* ARsceneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARsceneViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				73BCB40624DDE7DA0014C1A1 /* AppDelegate.swift */,
 				73BCB40824DDE7DA0014C1A1 /* SceneDelegate.swift */,
 				73BCB40C24DDE7DA0014C1A1 /* Main.storyboard */,
+				7329E5F624E3584600E63076 /* DictionaryViewController.swift */,
 				7373884924E339C600CC9AFB /* ARsceneViewController.swift */,
 				73BCB43B24DDEA880014C1A1 /* ImageViewController.swift */,
 				73A4D7F524DEE6F6009E0726 /* tessdata */,
@@ -430,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7329E5F724E3584600E63076 /* DictionaryViewController.swift in Sources */,
 				73BCB43A24DDEA350014C1A1 /* HomeViewController.swift in Sources */,
 				73BCB41124DDE7DA0014C1A1 /* AR_Translator_project.xcdatamodeld in Sources */,
 				73BCB40724DDE7DA0014C1A1 /* AppDelegate.swift in Sources */,
