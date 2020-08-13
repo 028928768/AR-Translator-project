@@ -15,12 +15,14 @@ class DictionaryViewController: UIViewController, UINavigationControllerDelegate
     @IBOutlet weak var languagePicker: UIPickerView!
     @IBOutlet weak var languagePickerHeighConstraint: NSLayoutConstraint!
     @IBOutlet weak var selectLanguageButton: UIButton!
+    @IBOutlet weak var translateButton: UIButton!
     
       //MARK: Translation variables
       let languages = ["Select Language", "Hindi","Thai","Korean", "French", "Italian", "German", "Japanese"]
       let languageCodes = ["th", "hi","th","ko", "fr", "it", "de", "ja"]
       var targetCode = "ja"
       var tempInputText = "nil"
+      let translateButtonIcon = UIImage(named: "translate_iMG")
     
     var pickerVisible: Bool = false
     override func viewDidLoad() {
@@ -30,6 +32,8 @@ class DictionaryViewController: UIViewController, UINavigationControllerDelegate
        // languagePicker.reloadAllComponents()
         configureLanguagePicker()
         inputTextLabel.delegate = self
+        translateButton.setImage(translateButtonIcon, for: .normal)
+        
     }
     override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()

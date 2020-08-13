@@ -112,13 +112,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1up-to-fqr">
-                                <rect key="frame" x="186" y="197" width="46" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome to AR-Translator!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lof-XX-hsz">
+                                <rect key="frame" x="55" y="42" width="306" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="picture_IMG" translatesAutoresizingMaskIntoConstraints="NO" id="yMv-CB-UpE">
+                                <rect key="frame" x="21" y="188" width="107" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera_IMG" translatesAutoresizingMaskIntoConstraints="NO" id="2hs-Sj-l0M">
+                                <rect key="frame" x="34" y="318" width="80" height="73"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dictionary_IMG" translatesAutoresizingMaskIntoConstraints="NO" id="BRl-Hm-68f">
+                                <rect key="frame" x="34" y="463" width="93" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Reconise text from given images then translate it!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TiD-au-qQa">
+                                <rect key="frame" x="136" y="202" width="243" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="AR-Live Translator: Translate text real time using AR technology!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxA-3N-xgD">
+                                <rect key="frame" x="135" y="328" width="243" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Dictionary: Type in input text then select desire language of translation which included 7 languages!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tD1-ff-kvc">
+                                <rect key="frame" x="135" y="463" width="243" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tips: Use tab bar to navigate within the applications. Tapping the following icons will navigate you to the features!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-cr-oGS">
+                                <rect key="frame" x="27" y="79" width="374" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="A2L-2H-WWh"/>
@@ -127,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slM-dg-OuF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="303" y="-921"/>
+            <point key="canvasLocation" x="302.89855072463769" y="-921.19565217391312"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sU3-jT-dhM">
@@ -148,31 +192,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6o-Hh-CdM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1374" y="-213"/>
-        </scene>
-        <!--Setting-->
-        <scene sceneID="jVb-mI-CW7">
-            <objects>
-                <viewController id="P4M-dr-gcz" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="A0J-NQ-6dh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Setting" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pck-uO-66i">
-                                <rect key="frame" x="186" y="210" width="55" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="yfR-uC-Mb4"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Setting" image="setting_IMG" id="dgl-1J-vkW"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7bm-CV-l4a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2096" y="737"/>
         </scene>
         <!--Dictionary-->
         <scene sceneID="jT8-QP-svW">
@@ -211,7 +230,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="Ogr-Ys-wuM"/>
                                 </constraints>
-                                <state key="normal" title="Translate"/>
                                 <connections>
                                     <action selector="translateButtonTapped:" destination="4LF-59-kxB" eventType="touchUpInside" id="9nI-49-MpN"/>
                                 </connections>
@@ -260,6 +278,7 @@
                         <outlet property="languagePickerHeighConstraint" destination="uOc-XY-EQz" id="CcF-go-x0G"/>
                         <outlet property="outputTextLabel" destination="ffw-8N-vKk" id="f8E-qX-vHx"/>
                         <outlet property="selectLanguageButton" destination="Z4z-Bm-hs7" id="1fk-Yu-oZ0"/>
+                        <outlet property="translateButton" destination="xPh-Gv-Vka" id="ASn-v7-PMX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaY-XO-QNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -399,6 +418,5 @@
         <image name="camera_IMG" width="50" height="50"/>
         <image name="home_IMG" width="50" height="50"/>
         <image name="picture_IMG" width="50" height="50"/>
-        <image name="setting_IMG" width="50" height="50"/>
     </resources>
 </document>
