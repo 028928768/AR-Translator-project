@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DictionaryViewController: UIViewController, UINavigationControllerDelegate  {
+class DictionaryViewController: UIViewController, UINavigationControllerDelegate, UITextFieldDelegate  {
     //MARK: Outlets
     @IBOutlet weak var inputTextLabel: UITextField!
     @IBOutlet weak var outputTextLabel: UITextView!
@@ -20,6 +20,7 @@ class DictionaryViewController: UIViewController, UINavigationControllerDelegate
       let languages = ["Select Language", "Hindi","Thai","Korean", "French", "Italian", "German", "Japanese"]
       let languageCodes = ["th", "hi","th","ko", "fr", "it", "de", "ja"]
       var targetCode = "ja"
+      var tempInputText = "nil"
     
     var pickerVisible: Bool = false
     override func viewDidLoad() {
@@ -28,6 +29,7 @@ class DictionaryViewController: UIViewController, UINavigationControllerDelegate
         // Do any additional setup after loading the view.
        // languagePicker.reloadAllComponents()
         configureLanguagePicker()
+        inputTextLabel.delegate = self
     }
     override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()
@@ -65,6 +67,21 @@ class DictionaryViewController: UIViewController, UINavigationControllerDelegate
               }
     }
     
+    
+    @IBAction func translateButtonTapped(_ sender: Any) {
+        translateText(detectedText: self.tempInputText)
+        
+    }
+    
+    //MARK: Delegetes
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        self.tempInputText = inputTextLabel.text ?? "Hello"
+    }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {   //delegate method
+      textField.resignFirstResponder()
+        return true
+    }
+    
    
     
 } //End Main Brackets
@@ -90,8 +107,26 @@ extension DictionaryViewController: UIPickerViewDataSource, UIPickerViewDelegate
            targetCode = languageCodes[row]
             languagePickerHeighConstraint.constant = 0
             pickerVisible = false
-        self.outputTextLabel.text = targetCode
+       
        }
+    
+    //Translation calls
+    func translateText(detectedText: String) {
+        
+        guard !detectedText.isEmpty else {
+            return
+        }
+        
+        let task = try? GoogleTranslate.sharedInstance.translateTextTask(text: detectedText, targetLanguage: self.targetCode, completionHandler: { (translatedText: String?, error: Error?) in
+            debugPrint(error?.localizedDescription)
+            
+            DispatchQueue.main.async {
+                self.outputTextLabel.text = translatedText
+            }
+            
+        })
+        task?.resume()
+    }
 }
 
 

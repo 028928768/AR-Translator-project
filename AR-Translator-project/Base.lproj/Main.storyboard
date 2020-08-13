@@ -194,7 +194,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="input text here....." borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Qi-H4-H17">
                                 <rect key="frame" x="55" y="107" width="304" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Translated text........" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ffw-8N-vKk">
                                 <rect key="frame" x="55" y="266" width="304" height="128"/>
@@ -212,6 +212,9 @@
                                     <constraint firstAttribute="height" constant="77" id="Ogr-Ys-wuM"/>
                                 </constraints>
                                 <state key="normal" title="Translate"/>
+                                <connections>
+                                    <action selector="translateButtonTapped:" destination="4LF-59-kxB" eventType="touchUpInside" id="9nI-49-MpN"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAZ-l9-Vio">
                                 <rect key="frame" x="47" y="476" width="320" height="200"/>
