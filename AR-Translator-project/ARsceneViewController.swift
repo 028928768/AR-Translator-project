@@ -29,10 +29,12 @@ class ARsceneViewController: UIViewController, ARSCNViewDelegate {
                material.diffuse.contents = UIColor.blue
                
                text.materials = [material]
+            
+               text.font = UIFont(name: "Times" , size: 0.9)
                
                let node = SCNNode()
                
-               node.position = SCNVector3(x: 0, y: 0.02, z: -0.1)
+               node.position = SCNVector3(x: 0, y: -0.03, z: -0.1)
                
                node.scale = SCNVector3(x: 0.01, y: 0.01, z: 0.01)
                

@@ -156,11 +156,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Tips: Use tab bar to navigate within the applications. Tapping the following icons will navigate you to the features!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W0w-cr-oGS">
-                                <rect key="frame" x="27" y="79" width="374" height="69"/>
+                                <rect key="frame" x="34" y="81" width="374" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -283,7 +283,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WaY-XO-QNr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-500.00000000000006" y="1240.7608695652175"/>
+            <point key="canvasLocation" x="-1213" y="737"/>
         </scene>
         <!--Image-->
         <scene sceneID="5pj-dH-yf9">
@@ -392,11 +392,11 @@
             </objects>
             <point key="canvasLocation" x="2157.971014492754" y="736.95652173913049"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Camera-->
         <scene sceneID="i2u-wx-LGm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eTI-iT-PUl" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="camera_IMG" id="Ol0-ZN-8aC"/>
+                    <tabBarItem key="tabBarItem" title="Camera" image="camera_IMG" id="Ol0-ZN-8aC"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="HUc-WR-4tc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
